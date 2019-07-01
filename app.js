@@ -53,7 +53,7 @@ app.use('/campgrounds/:id/comments', commentsRoutes);
 
 
 //APPLICATION LISTENER
-app.listen(process.event.PORT || 3000, function(){
+app.listen(process.env.PORT || 3000, function(){
     console.log('The YelpCamp Server Is Now Running!!');
 });
 
